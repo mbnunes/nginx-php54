@@ -7,4 +7,4 @@ RUN apt-get update && apt-get upgrade -y && apt-get install python-software-prop
 
 EXPOSE 80 443
 
-ENTRYPOINT [ "nginx -D" ]
+CMD ["nginx", "-g", "daemon off;"]
