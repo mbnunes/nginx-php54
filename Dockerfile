@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM ubuntu:14.04
 
 RUN apt-get update && apt-get upgrade -y && apt-get install python-software-properties -y && \
     add-apt-repository ppa:ondrej/php && \
